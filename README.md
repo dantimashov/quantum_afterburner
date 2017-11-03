@@ -19,6 +19,12 @@ The ship has 5 lives. In addition to the number of remaining lives, the screen d
 If a player crashes into an obstacle, then it disappears, and the number of lives of the player is decreased. 
 When the number of lives becomes zero, the game ends.
 
+Control
+
+right arrow on keyboard - rotation of the vector of the ship's direction of travel clockwise
+
+left arrow on keyboard - rotation of the vector of the ship's direction of travel counter-clockwise
+
 ## Link to project page
 [The info about project in Russian on the SE wiki ](http://mit.spbau.ru/sewiki/index.php/%D0%9A%D0%B2%D0%B0%D0%BD%D1%82%D0%BE%D0%B2%D1%8B%D0%B9_%D1%84%D0%BE%D1%80%D1%81%D0%B0%D0%B6)
 

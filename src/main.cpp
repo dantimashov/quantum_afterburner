@@ -21,6 +21,7 @@ void showMenu(RenderWindow& window){
     Image about_image; about_image.loadFromFile("graphic/about.jpg");
     Texture about_t; about_t.loadFromImage(about_image);
     Sprite about_s; about_s.setTexture(about_t);
+    about_s.setScale(0.48,0.52);
 
     Font font;
     font.loadFromFile("graphic/font.otf");

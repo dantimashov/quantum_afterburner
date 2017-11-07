@@ -21,15 +21,18 @@ public:
                 return makeRectangle(Vector2f(a, b), x, y);
                 break;
             }
-            case 3:
+            case 3:{
                 return makePolygon(radius, 3, x, y);
                 break;
-            case 4:
+            }
+            case 4:{
                 return makePolygon(radius, 4, x, y);
                 break;
-            case 5:
+            }
+            case 5:{
                 return makePolygon(radius, 5, x, y);
                 break;
+            }
         }
     }
 

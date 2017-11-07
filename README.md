@@ -43,5 +43,6 @@ for Windows: [Link for downloading the library](https://www.sfml-dev.org/downloa
 
 In case you installed SFML to a non-standard path, you'll need to tell the compiler where to find the SFML.
 Add a path after the -I flag in the Makefile. For example: $(CXX) $(CXX_FLAGS) ./src/main.o -o qrace -I /usr/lib -lsfml-graphics -lsfml-window -lsfml-system
+After assembly, you can run the executable from the same directory, for example ./qrace
 
 For building you can use a make. 

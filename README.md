@@ -42,6 +42,6 @@ sudo apt-get install libsfml-dev
 for Windows: [Link for downloading the library](https://www.sfml-dev.org/download.php)
 
 In case you installed SFML to a non-standard path, you'll need to tell the compiler where to find the SFML.
-Add a path after the -I flag in the Makefile. For example: $(CXX) $(CPP_FLAGS) main.o -o bin/quantum_afterburner -I /usr/lib -lsfml-graphics -lsfml-window -lsfml-system
+Add a path after the -I flag in the Makefile. For example: $(CXX) $(CXX_FLAGS) ./src/main.o -o qrace -I /usr/lib -lsfml-graphics -lsfml-window -lsfml-system
 
 For building you can use a make. 

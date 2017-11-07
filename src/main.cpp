@@ -21,16 +21,16 @@ void showMenu(RenderWindow& window){
     Image about_image; about_image.loadFromFile("graphic/about.jpg");
     Texture about_t; about_t.loadFromImage(about_image);
     Sprite about_s; about_s.setTexture(about_t);
-    about_s.setScale(0.48,0.52);
+    about_s.setScale(0.48, 0.52);
 
     Font font;
     font.loadFromFile("graphic/font.otf");
     Text menu0("Start", font, 70);
     Text menu1("About game", font, 70);
     Text menu2("Quit", font, 70);
-    menu0.setFillColor(Color::White);
-    menu1.setFillColor(Color::White);
-    menu2.setFillColor(Color::White);
+    menu0.setColor(Color::White);
+    menu1.setColor(Color::White);
+    menu2.setColor(Color::White);
     menu0.setPosition(view.getCenter().x - 150, view.getCenter().y - 120);
     menu1.setPosition(view.getCenter().x - 150, view.getCenter().y - 60);
     menu2.setPosition(view.getCenter().x - 150, view.getCenter().y);
@@ -56,19 +56,19 @@ void showMenu(RenderWindow& window){
         }
 
         if (menuNum == 0) {
-            menu0.setFillColor(Color::Red);
-            menu1.setFillColor(Color::White);
-            menu2.setFillColor(Color::White);
+            menu0.setColor(Color::Red);
+            menu1.setColor(Color::White);
+            menu2.setColor(Color::White);
         }
         if (menuNum == 1) {
-            menu1.setFillColor(Color::Red);
-            menu0.setFillColor(Color::White);
-            menu2.setFillColor(Color::White);
+            menu1.setColor(Color::Red);
+            menu0.setColor(Color::White);
+            menu2.setColor(Color::White);
         }
         if (menuNum == 2)  {
-            menu2.setFillColor(Color::Red);
-            menu1.setFillColor(Color::White);
-            menu0.setFillColor(Color::White);
+            menu2.setColor(Color::Red);
+            menu1.setColor(Color::White);
+            menu0.setColor(Color::White);
         }
 
         if (menuNum == 0 && Keyboard::isKeyPressed(Keyboard::Return)) {
@@ -94,10 +94,10 @@ void showResults(RenderWindow& window, int finalScore) {
     Text text2("", font, 30);
     Text text3("Press Enter to restart", font, 30);
     Text text4("Goodbye!", font, 50);
-    text1.setFillColor(Color::White);
-    text2.setFillColor(Color(10,170, 170));
-    text3.setFillColor(Color::White);
-    text4.setFillColor(Color(10,170, 170));
+    text1.setColor(Color::White);
+    text2.setColor(Color(10,170, 170));
+    text3.setColor(Color::White);
+    text4.setColor(Color(10,170, 170));
     ostringstream endScore;
     endScore << finalScore;
     text1.setPosition(view.getCenter().x - 105, view.getCenter().y - 60);
@@ -193,13 +193,13 @@ void gameStart() {
     Font font;
     font.loadFromFile("graphic/font.otf");
     Text text("", font, 30);
-    text.setFillColor(Color::Red);
+    text.setColor(Color::Red);
     text.setStyle(Text::Bold);
 
     Text text2("You lose!", font, 40);
     Text text3("", font, 30);
-    text2.setFillColor(Color::White);
-    text3.setFillColor(Color(10, 170, 170));
+    text2.setColor(Color::White);
+    text3.setColor(Color(10, 170, 170));
 
     coord c, d;
     int v, ccc = 1;
